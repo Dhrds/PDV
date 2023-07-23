@@ -1,0 +1,14 @@
+{
+    "cSpell.words": [
+        "dotenv",
+        "mysite",
+        "MYSQLDATABASE",
+        "MYSQLHOST",
+        "MYSQLPASSWORD",
+        "MYSQLPORT",
+        "MYSQLUSER",
+        "psycopg",
+        "teste",
+        "whitenoise"
+    ]
+}

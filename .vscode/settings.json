@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
+        "ALLOWALL",
+        "consulta",
         "dotenv",
         "mysite",
         "MYSQLDATABASE",
@@ -8,6 +10,7 @@
         "MYSQLPORT",
         "MYSQLUSER",
         "psycopg",
+        "rodar",
         "teste",
         "whitenoise"
     ]

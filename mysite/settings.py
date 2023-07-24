@@ -1,8 +1,8 @@
 import os
 from pathlib import Path
 
-#from dotenv import load_dotenv
-#load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -70,8 +70,15 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
+    },
+    "replica1": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db2.sqlite3",
     }
 }
+
+# Já esse irá rodar a consulta no banco 'replica1'.
+# Author.objects.using('replica1').all()
 
 # DATABASES = {
 #     'default': {

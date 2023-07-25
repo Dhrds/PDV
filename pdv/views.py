@@ -1,5 +1,8 @@
 from django.shortcuts import render
+from .models import Produtos
 
 
 def home(request):
-    return render(request, 'home.html', {'teste': 'teste'})
+    produtos = Produtos.objects.all().select_related('categoria')
+    print(produtos)
+    return render(request, 'home.html', {'produtos': produtos})

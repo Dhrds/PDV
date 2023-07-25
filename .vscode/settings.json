@@ -2,6 +2,7 @@
     "cSpell.words": [
         "ALLOWALL",
         "Categoria",
+        "categorias",
         "consulta",
         "dotenv",
         "mysite",
@@ -12,7 +13,9 @@
         "MYSQLUSER",
         "psycopg",
         "rodar",
+        "subtitulo",
         "teste",
+        "titulo",
         "whitenoise"
     ]
 }

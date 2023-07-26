@@ -10,7 +10,7 @@
             <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
                 {% for categoria in categorias %}
                     <li class="nav-item">
-                        <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-2">
+                        <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 " data-bs-toggle="pill" href="#{{categoria.nome}}">
                             <i class="fa {{categoria.class_html}} fa-2x text-primary"></i>
                             <div class="ps-3">
                                 <small class="text-body">{{categoria.subtitulo}}</small>
@@ -23,7 +23,7 @@
             </ul>
             <div class="tab-content">
                 
-                <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div id="{{categorias.0.nome}}" class="tab-pane fade show p-0 active">
                     <div class="row g-4">
 
                         {% for produto in produtos %}            
@@ -48,7 +48,7 @@
                     </div>
                 </div>
 
-                <div id="tab-2" class="tab-pane fade show p-0">
+                <div id="{{categorias.1.nome}}" class="tab-pane fade show p-0">
                     <div class="row g-4">
 
                         {% for produto in produtos %}
@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 
-                <div id="tab-3" class="tab-pane fade show p-0">
+                <div id="{{categorias.2.nome}}" class="tab-pane fade show p-0">
                     <div class="row g-4">
                         {% for produto in produtos %}
 
